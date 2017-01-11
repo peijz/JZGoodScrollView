@@ -10,8 +10,12 @@
  */
 - (instancetype)initWithFrame:(CGRect)frame urls:(NSArray *)urls placeHolderImage:(UIImage *)placeHolderImage;
 
+
+
 /** * 是否显示pagecontrol  默认是yes */
 @property(nonatomic,assign) BOOL pageShow;
+
+
 
 /** * 当前分页控件小圆标颜色 默认 white */
 @property(nonatomic,strong) UIColor * currentPageColor;
@@ -20,11 +24,17 @@
 /** * 是否自动滚动 默认为yes */
 @property(nonatomic,assign) BOOL autoScroll;
 
+
+
 /** * 自动滚动的时间间隔 默认3秒 */
 @property(nonatomic,assign) NSTimeInterval autoScrollTimeInterval;
 
+
+
 /** * 图片的Url数组 */
 @property(nonatomic,strong) NSArray * jzUrls;
+
+
 
 /** * 占位图 */
 @property(nonatomic,strong) UIImage * placeholderImage;
@@ -33,8 +43,12 @@
 /** * 开启定时器 */
 - (void)startTimer;
 
+
+
 /** * 暂时定时器 */
 -(void)stopTimer;
+
+
 
 /** * 彻底关闭定时器 在viewDidDisappear或viewWillDisappear 需要调用此方法 */
 - (void)invalidateTimer;
