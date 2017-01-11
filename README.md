@@ -8,7 +8,7 @@
 
  @return JZGoodScrollView</br>
  */ </br></br>
-- (instancetype)initWithFrame:(CGRect)frame urls:(NSArray *)urls placeHolderImage:(UIImage *)placeHolderImage;
+-(instancetype)initWithFrame:(CGRect)frame urls:(NSArray *)urls placeHolderImage:(UIImage *)placeHolderImage;
 </br></br>
 
 
@@ -45,7 +45,7 @@
 
 
 /** * 开启定时器 */</br></br>
-- (void)startTimer;</br></br>
+-(void)startTimer;</br></br>
 
 
 
@@ -55,7 +55,7 @@
 
 
 /** * 彻底关闭定时器 在viewDidDisappear或viewWillDisappear 需要调用此方法 */</br></br>
-- (void)invalidateTimer;</br></br>
+-(void)invalidateTimer;</br></br>
 
 
 
